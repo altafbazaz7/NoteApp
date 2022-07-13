@@ -2,7 +2,6 @@
 console.log("Welcome to notes app. This is app.js");
 showNotes();
 
-// If user adds a note, add it to the localStorage
 let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", function(e) {
   let addTxt = document.getElementById("addTxt");
@@ -77,14 +76,6 @@ search.addEventListener("input", function(){
         else{
             element.style.display = "none";
         }
-        // console.log(cardTxt);
     })
 })
 
-/*
-Further Features:
-1. Add Title
-2. Mark a note as Important
-3. Separate notes by user
-4. Sync and host to web server 
-*/ 
